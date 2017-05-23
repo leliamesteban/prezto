@@ -10,7 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Aliases
+alias dmesg="dmesg --human --color=always"
+alias rm='echo "Use \\\rm or trash (trash-cli)."; false'
 
 # Notify on long-running commands
 # install undistract-me
