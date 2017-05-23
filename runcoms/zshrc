@@ -11,3 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Notify on long-running commands
+# install undistract-me
+source /usr/share/undistract-me/long-running.bash
+notify_when_long_running_commands_finish_install
