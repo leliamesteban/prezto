@@ -9,6 +9,10 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export EDITOR=vim
+export VISUAL=$EDITOR
+
 # Path
 # lowercase required. zsh array that gets exported to PATH
 path+=('/home/liam/bin')
